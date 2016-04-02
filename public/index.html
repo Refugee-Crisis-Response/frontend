@@ -43,11 +43,8 @@
             </li>
         </ul>
     </nav>
-
     <!-- Page content -->
     <div id="wrapper">
-
-
      <!-- Top Navigation -->
      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
@@ -79,14 +76,11 @@
             </ul>
 
         </nav>
-
-
     <!-- Content -->
     <section style="height:95vh; width:100vw;">
       <div id="map" style="height:100%"></div>
       <input id="pac-input" class="controls" type="text" placeholder="Search Box" style="position:absolute; top:10px; left:10px;">
     </section>
-
     <!-- Footer -->
     <div id="footer">
       <div class="container">
@@ -114,10 +108,7 @@
       </div>
     </div>
     <!-- End of Footer -->
-
-
     </div> <!-- End of wrapper -->
-
     <!-- SCRIPTS -->
     <script type="text/javascript">
       var pageMap;
@@ -129,9 +120,11 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBYcrYcQ_Z_wwH0Kw4NgDLFKy_5J0cVf5M"></script>
     <!-- Custom JavaScript -->
     <script src="/js/sidebar.js"></script>
-    <script src="/js/map.js"></script>
+    <script src="/js/controllers/map.js"></script>
+    <script src="/js/bootstrap.js"></script>
     <script>
       // This example adds a search box to a map, using the Google Place Autocomplete
       // feature. People can enter geographical searches. The search box will return a
@@ -141,8 +134,6 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
     </script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBYcrYcQ_Z_wwH0Kw4NgDLFKy_5J0cVf5M&libraries=places&callback=initAutocomplete"
-         async defer></script>
 
 </body>
 

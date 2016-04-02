@@ -1,5 +1,7 @@
 {
     "globals": {
+        "google": false,
+        "mapController": true,
         "console": false,
         "waits": false,
         "waitsFor": false,
