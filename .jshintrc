@@ -1,0 +1,41 @@
+{
+    "globals": {
+        "console": false,
+        "waits": false,
+        "waitsFor": false,
+        "runs": false,
+        "$": false,
+        "escape": false,
+        "Mailcheck": false,
+        "Validation": false,
+        "document": false,
+        "window": false
+    },
+
+    "node" : true,
+    "browser" : false,
+
+    "boss" : false,
+    "curly": false,
+    "debug": false,
+    "devel": false,
+    "eqeqeq": false,
+    "evil": true,
+    "forin": false,
+    "immed": true,
+    "laxbreak": false,
+    "newcap": true,
+    "noarg": true,
+    "noempty": false,
+    "nonew": false,
+    "nomen": false,
+    "onevar": true,
+    "plusplus": false,
+    "regexp": false,
+    "undef": true,
+    "sub": true,
+    "strict": false,
+    "white": true,
+    "unused": true,
+    "esnext": true
+}
