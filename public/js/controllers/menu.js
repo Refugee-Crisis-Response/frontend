@@ -16,7 +16,7 @@ var constructor = function (el, close, linkClass) {
   element = $(el);
   closeButton = $(close);
   menuLinkClass = linkClass;
-  element.delegate('.' + menuLinkClass, 'click', onMenuLinkClick);
+  element.delegate(menuLinkClass, 'click', onMenuLinkClick);
 };
 
 return constructor;

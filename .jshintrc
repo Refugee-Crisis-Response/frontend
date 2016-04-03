@@ -3,6 +3,7 @@
         "google": false,
         "mapController": true,
         "menuController": true,
+        "searchController": true,
         "console": false,
         "waits": false,
         "waitsFor": false,

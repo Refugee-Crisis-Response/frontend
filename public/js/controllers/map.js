@@ -63,9 +63,7 @@ var mapController = (function () {
     });
   };
 
-  var onSearch = function () {
-    var places = searchBox.getPlaces();
-
+  var onSearch = function (e, places) {
     if (places.length === 0) {
       return;
     }
@@ -82,7 +80,7 @@ var mapController = (function () {
 
   var onMapChange = function () {
     clearMarkers();
-    searchBox.setBounds(map.getBounds());
+    $(window).trigger('search-end', map.getBounds());
     getCities();
   };
 
@@ -92,14 +90,9 @@ var mapController = (function () {
       zoom: 8,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    searchInput = document.getElementById('pac-input');
-    $('#pac-input').click(function () {
-      $(this).val('');
-    });
-    searchBox = new google.maps.places.SearchBox(searchInput);
+    $(window).on('search', onSearch);
     map.addListener('dragend', onMapChange);
     map.addListener('zoom_changed', onMapChange);
-    searchBox.addListener('places_changed', onSearch);
   };
 
   return constructor;
