@@ -81,6 +81,10 @@ body{
   margin-top: 55px;
 }
 
+#map {
+  height: 100%;
+}
+
 .controls {
   position:absolute;
   /*margin-top: 50px; */
