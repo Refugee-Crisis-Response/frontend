@@ -2,6 +2,7 @@
     "globals": {
         "google": false,
         "mapController": true,
+        "menuController": true,
         "console": false,
         "waits": false,
         "waitsFor": false,

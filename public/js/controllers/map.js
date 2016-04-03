@@ -69,17 +69,15 @@ var mapController = (function () {
     if (places.length === 0) {
       return;
     }
-
     // Clear out the old markers.
     clearMarkers();
-
     // For each place, get the icon, name and location.
     var bounds = new google.maps.LatLngBounds();
-
     for (var i = 0, len = places.length; i < len; i++) {
       setPlace(bounds, places[i]);
     }
     map.fitBounds(bounds);
+    getCities();
   };
 
   var onMapChange = function () {
