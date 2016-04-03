@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Refuge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link href="/css/stylish-portfolio.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  </head>
+
+  <body class="mini-navbar">
+
+    <!-- Side Navigation -->
+
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <img src="//i.imgur.com/OHDzAWD.png" width="30px">
+            </li>
+            <li>
+                <a href="#top" class="menuLink">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="menuLink">Countries</a>
+            </li>
+            <li>
+                <a href="#about" class="menuLink">About</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Page content -->
+    <div id="wrapper">
+     <!-- Top Navigation -->
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+         <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-bars"></i><span class="web-name">Refuge</span></a>
+            <ul class="nav navbar-right top-nav" style="float:right; padding-left:0px;">
+              <li>
+                <a href="#"><i class="fa fa-search"></i></a>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-filter"></i><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+              <li>
+              <a class="navbar-brand"><img src="//i.imgur.com/OHDzAWD.png" width="30px"></a>
+              </li>
+
+            </ul>
+
+        </nav>
+    <!-- Content -->
+    <section id="page-main">
+      <div id="map"></div>
+      <div class="search-container">
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+      </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container">
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <img src="//www.countries-ofthe-world.com/flags/flag-of-Syria.png" width="30px;"> <span class="caret caret-up"></span>
+                </button>
+                <ul class="dropdown-menu drop-up" role="menu">
+                    <li><a><img src="//www.countries-ofthe-world.com/flags/flag-of-Afghanistan.png" width="30px;"> Arabic</a></li>
+                    <li><a><img src="//www.countries-ofthe-world.com/flags/flag-of-Greece.png" width="30px;"> Ellinika</a></li>
+                    <li><a><img src="//www.countries-ofthe-world.com/flags/flag-of-United-Kingdom.png" width="30px;"> English</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Select Language</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group footer-info">
+                <ul class="list-inline" role="menu">
+                    <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" target="blank">Emergency <i class="fa fa-phone"></i> 100</a></li>
+                </ul>
+            </div>
+      </div>
+    </div>
+    <!-- End of Footer -->
+    </div> <!-- End of wrapper -->
+    <!-- SCRIPTS -->
+    <script type="text/javascript">
+      var pageMap;
+    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"   integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="   crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBYcrYcQ_Z_wwH0Kw4NgDLFKy_5J0cVf5M&libraries=places"></script>
+    <!-- Custom JavaScript -->
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/controllers/map.js"></script>
+    <script src="/js/controllers/menu.js"></script>
+    <script src="/js/controllers/search.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+    </script>
+
+</body>
+
+</html>
