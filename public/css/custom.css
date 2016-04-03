@@ -59,6 +59,7 @@ body{
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
+  height: 55px;
   right: 0;
   left: 0;
   z-index: 1;
@@ -72,6 +73,12 @@ body{
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
+}
+
+#page-main {
+  height: 91vh;
+  width: 100vw;
+  margin-top: 55px;
 }
 
 .controls {

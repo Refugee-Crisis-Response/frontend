@@ -95,6 +95,9 @@ var mapController = (function () {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     searchInput = document.getElementById('pac-input');
+    $(searchInput).click(function () {
+      $(searchInput).empty();
+    });
     searchBox = new google.maps.places.SearchBox(searchInput);
     map.addListener('dragend', onMapChange);
     map.addListener('zoom_changed', onMapChange);
