@@ -19,7 +19,7 @@ var mapController = (function () {
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(point.lat, point.lng),
       map: map,
-      icon: '/img/bomb.png'
+      icon: '/img/country.png'
     });
     markers.push(marker);
   };
