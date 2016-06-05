@@ -64,7 +64,7 @@ var mapController = (function () {
   };
 
   var onSearch = function (e, places) {
-    if (places.length === 0) {
+    if (places && places.length === 0) {
       return;
     }
     // Clear out the old markers.
@@ -93,6 +93,7 @@ var mapController = (function () {
     $(window).on('search', onSearch);
     map.addListener('dragend', onMapChange);
     map.addListener('zoom_changed', onMapChange);
+    google.maps.event.addListenerOnce(map, 'bounds_changed', getCities);
   };
 
   return constructor;
